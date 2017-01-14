@@ -1,7 +1,6 @@
 module.exports = (req, res, next) => {
     const token = req.get('token');
     if (!token) {
-        res.setHeader('WWW-Authenticate', 'Basic realm="SCP"');
         res.status(401).send({
             errors: [{
                 status: '401',
@@ -15,7 +14,6 @@ module.exports = (req, res, next) => {
       next();
     }
     else {
-      res.setHeader('WWW-Authenticate', 'Basic realm="SCP"');
       res.status(402).send({
           errors: [{
               status: '401',

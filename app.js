@@ -1,6 +1,9 @@
 const express = require('express')
 const chalk = require('chalk');
-var app = express()
+const athenticate = require('./middleware/authenticator');
+const app = express()
+
+app.use(athenticate);
 
 // updates the state of the item using a chat bots
 app.post('/text-processor', function(req, res) {
