@@ -4,8 +4,7 @@
     "description": "This is a rest API for Home Automation ",
     "main": "app.js",
     "scripts": {
-        "test": "HelloWorld",
-        "dev": "node app.js"
+        "dev": "set NODE_ENV=development&&nodemon --legacy-watch app.js --print-config"
     },
     "repository": {
         "type": "git",

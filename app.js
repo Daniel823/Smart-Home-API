@@ -1,4 +1,5 @@
-var express = require('express')
+const express = require('express')
+const chalk = require('chalk');
 var app = express()
 
 // updates the state of the item using a chat bots
@@ -16,5 +17,8 @@ app.post('/item-state', function(req, res) {
 })
 
 app.listen(3000, function() {
-    console.log('SmartHome API listening on port 3000: ');
+    console.info(chalk.magenta('---------------------------------------'));
+    console.log(chalk.cyan(' SmartHome API listening on port: 3000'));
+    console.info(chalk.magenta('---------------------------------------'));
+
 })
