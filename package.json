@@ -1,0 +1,24 @@
+{
+    "name": "SmartHomeAPI",
+    "version": "0.0.0",
+    "description": "This is a rest API for Home Automation ",
+    "main": "app.js",
+    "scripts": {
+        "test": "HelloWorld",
+        "dev": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "SmartHomeAPI"
+    },
+    "keywords": [
+        "Smart",
+        "Home",
+        "Automation"
+    ],
+    "author": "Daniel Glownia",
+    "license": "BSD-2-Clause",
+    "dependencies": {
+        "express": "~4.14.0"
+    }
+}
