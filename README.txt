@@ -5,7 +5,7 @@
 /___/_/_/_/\_,_/_/  \__/ /_//_/\___/_/_/_/\__/ /_/ |_/_/  /___/
 
 
-This is a large rest API that is responsible for all the backend data
+This is a large rest API that is responsible for all backend data
 processing. This api handles data from several clients. The first one being
 the window blind, taking in information every 10 min and updating a database.
 The second client is the Amazon Alexa echo voice commands(open or close). Lastly,
