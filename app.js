@@ -30,10 +30,8 @@ app.post('/voice-processor', function(req, res) {
     res.status(201).send("Request has been saved and processed");
 })
 
-app.post('/window-state', function(req, res) {
-    dataRepo.save(req.body);
-    res.status(201).send('State Created!');
-})
+//Window state was deleted becuase the reponcibility was given to a seperate app
+//that will update the db every 10 min based on the call client.getState()
 
 app.listen(3000, function() {
     console.info(chalk.magenta('---------------------------------------'));
