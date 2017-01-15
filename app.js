@@ -1,12 +1,15 @@
 const express = require('express')
 const chalk = require('chalk');
 const athenticate = require('./middleware/authenticator');
+const validate = require('./middleware/validator');
 const app = express()
 
 app.use(athenticate);
+app.use(validate);
 
 // updates the state of the item using a chat bots
 app.post('/text-processor', function(req, res) {
+
     res.status(202).send(req.body);
 })
 
@@ -15,7 +18,8 @@ app.post('/voice-processor', function(req, res) {
     res.status(202).send(req.body);
 })
 
-app.post('/item-state', function(req, res) {
+app.post('/window-state', function(req, res) {
+    console.dir(req.body);
     res.status(201).send('State Created!');
 })
 

@@ -1,5 +1,7 @@
 module.exports = (req, res, next) => {
     const token = req.get('token');
+
+    console.info(token)
     if (!token) {
         res.status(401).send({
             errors: [{

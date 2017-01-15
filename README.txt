@@ -27,30 +27,29 @@ Client Response Schema
 
 {
     "meta": {
-        "fitting": "window",
         "room-id": 1
     },
-    "data": [{
-        "type": "micro-controller",
+    "data": {
+        "type": "window-controller",
         "id": 1,
         "attributes": {
             "date-time": "January 1, 1970, 00:00:00",
             "temp": 35,
             "light": .5
         }
-    }]
+    }
 }
 
 Chatbot Response Schema
 
 {
-    "data": [{
+    "data": {
         "type": "android-client",
         "id": 1,
         "attributes": {
             "text": "open the blinds plz"
         }
-    }]
+    }
 }
 
 Amazon Alexa Client
@@ -59,11 +58,11 @@ Ex. "Alexa, turn off the window"  (close window)
     "Alexa, turn on the window"   (open window)
 
     {
-        "data": [{
+        "data": {
             "type": "alexa-client",
             "id": 1,
             "attributes": {
                 "response": "open"
             }
-        }]
+        }
     }
