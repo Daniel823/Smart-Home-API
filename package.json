@@ -1,25 +1,26 @@
 {
-    "name": "SmartHomeAPI",
-    "version": "0.0.0",
-    "description": "This is a rest API for Home Automation ",
-    "main": "app.js",
-    "scripts": {
-        "dev": "set NODE_ENV=development&&nodemon --legacy-watch app.js --print-config"
-    },
-    "repository": {
-        "type": "git",
-        "url": "SmartHomeAPI"
-    },
-    "keywords": [
-        "Smart",
-        "Home",
-        "Automation"
-    ],
-    "author": "Daniel Glownia",
-    "license": "BSD-2-Clause",
-    "dependencies": {
-        "express": "~4.14.0",
-        "nodemon": "~1.11.0",
-        "chalk": "~1.1.3"
-    }
+  "name": "SmartHomeAPI",
+  "version": "0.0.0",
+  "description": "This is a rest API for Home Automation ",
+  "main": "app.js",
+  "scripts": {
+    "dev": "set NODE_ENV=development&&nodemon --legacy-watch app.js --print-config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "SmartHomeAPI"
+  },
+  "keywords": [
+    "Smart",
+    "Home",
+    "Automation"
+  ],
+  "author": "Daniel Glownia",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "chalk": "~1.1.3",
+    "express": "~4.14.0",
+    "mangodb": "^1.0.0",
+    "nodemon": "~1.11.0"
+  }
 }
