@@ -18,6 +18,8 @@
     "author": "Daniel Glownia",
     "license": "BSD-2-Clause",
     "dependencies": {
-        "express": "~4.14.0"
+        "express": "~4.14.0",
+        "nodemon": "~1.11.0",
+        "chalk": "~1.1.3"
     }
 }

@@ -18,7 +18,7 @@ app.post('/text-processor', function(req, res) {
     //perhaps verify that state has been updated
     dataRepo.save(client.getState());
 
-    res.status(201).send("Request has been saved and processed");
+    res.status(200).send("Request has been saved and processed");
 })
 
 //updates the state of the item using amazon alexa
@@ -27,14 +27,14 @@ app.post('/voice-processor', function(req, res) {
     //perhaps verify that state has been updated
     dataRepo.save(client.getState()); //check before if 1 or 0
 
-    res.status(201).send("Request has been saved and processed");
+    res.status(200).send("Request has been saved and processed");
 })
 
-//Window state was deleted becuase the reponcibility was given to a seperate app
+//Window state was deleted because the responsibility was given to a seperate app
 //that will update the db every 10 min based on the call client.getState()
 
 app.listen(3000, function() {
-    console.info(chalk.magenta('---------------------------------------'));
+    console.info(chalk.magenta('------------------s---------------------'));
     console.log(chalk.cyan(' SmartHome API listening on port: 3000'));
     console.info(chalk.magenta('---------------------------------------'));
 
